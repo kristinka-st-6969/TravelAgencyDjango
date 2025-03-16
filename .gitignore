@@ -1,0 +1,8 @@
+venv/
+__pycache__/
+migrations/
+__init__.py
+asgi.py
+wsgi.py
+db.sqlite3
+manage.py

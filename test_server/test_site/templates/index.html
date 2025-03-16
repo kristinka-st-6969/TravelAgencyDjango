@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page_name }}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Список туров</h1>
+    <div class="tour-block">
+        {% for tour in tours %}
+            <div class="tour">
+                <img class="tour-img" src="{{ tour.img }}" alt="{{ tour.title }}">
+                <p class="tour-title">{{ tour.title }}</p>
+                <button class="tour-button">Забронировать</button>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.tour-block {
+    display: flex;
+}
+
+.tour {
+    border: 1px solid yellow;
+    padding: 20px;
+    width: 300px;
+    font-family: Helvetica, sans-serif;
+    vertical-align: top;
+    border-radius: 20px;
+}
+
+.tour-title {
+    margin: 10px 0;
+}
+
+.tour-img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.tour-button {
+    margin: 10px 20px;
+    font-size: 18px;
+}
