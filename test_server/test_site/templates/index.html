@@ -11,6 +11,9 @@
     <div class="tour-block">
         {% for tour in tours %}
             <div class="tour">
+                {% if forloop.first %}
+                    <img class="sale-icon" src="{{ sale_img }}" alt="Скидка">
+                {% endif %}
                 <img class="tour-img" src="{{ tour.img }}" alt="{{ tour.title }}">
                 <p class="tour-title">{{ tour.title }}</p>
                 <button class="tour-button">Забронировать</button>
